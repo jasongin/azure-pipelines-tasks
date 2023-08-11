@@ -330,7 +330,6 @@ var ensureTool = function (name, versionArgs, validate) {
 exports.ensureTool = ensureTool;
 
 var ensureNvmInstalled = function () {
-    console.log('nvm tool: ');
     var toolPath = shell.which('nvm');
     if (!toolPath) {
         console.log(
@@ -346,6 +345,8 @@ var ensureNvmInstalled = function () {
             "Winget install nvm-windows\n" + 
             "==========================================\n"
         );
+    } else {
+        console.log('nvm tool: ' + toolPath + '');
     }
 }
 exports.ensureNvmInstalled = ensureNvmInstalled;

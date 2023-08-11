@@ -27,6 +27,7 @@ var copyTaskResources = util.copyTaskResources;
 var matchFind = util.matchFind;
 var matchCopy = util.matchCopy;
 var ensureTool = util.ensureTool;
+var ensureNvmInstalled = util.ensureNvmInstalled;
 var assert = util.assert;
 var getExternals = util.getExternals;
 var createResjson = util.createResjson;

@@ -91,7 +91,7 @@ async function run() {
         kubectlCli = new kubernetescli(kubeconfigfilePath);
         kubectlCli.login();
     }
-  
+    console.log("testing");
     const kubelogin = new Kubelogin(helmutil.getTaskTempDir());
     if (kubelogin.isAvailable() && !externalAuth) {
         tl.debug('Kubelogin is installed. Converting kubeconfig.');
