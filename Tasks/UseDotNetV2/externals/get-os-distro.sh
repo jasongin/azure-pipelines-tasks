@@ -169,6 +169,10 @@ get_machine_architecture() {
             echo "arm64"
             return 0
             ;;
+        arm64)
+            echo "arm64"
+            return 0
+            ;;
         esac
     fi
 
